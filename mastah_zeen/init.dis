@@ -1,0 +1,58 @@
+  5           0 LOAD_CONST               1 (10)
+              3 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (angka)
+
+  6           9 LOAD_CONST               2 (0)
+             12 LOAD_FAST                0 (self)
+             15 STORE_ATTR               1 (apes)
+
+  7          18 SETUP_LOOP              99 (to 120)
+             21 LOAD_GLOBAL              2 (range)
+             24 LOAD_FAST                0 (self)
+             27 LOAD_ATTR                0 (angka)
+             30 CALL_FUNCTION            1
+             33 GET_ITER            
+        >>   34 FOR_ITER                82 (to 119)
+             37 STORE_FAST               1 (i)
+
+  8          40 LOAD_GLOBAL              3 (time)
+             43 LOAD_ATTR                4 (sleep)
+             46 LOAD_CONST               3 (0.5)
+             49 CALL_FUNCTION            1
+             52 POP_TOP             
+
+  9          53 LOAD_FAST                0 (self)
+             56 DUP_TOP             
+             57 LOAD_ATTR                1 (apes)
+             60 LOAD_CONST               4 (1)
+             63 INPLACE_ADD         
+             64 ROT_TWO             
+             65 STORE_ATTR               1 (apes)
+
+ 10          68 JUMP_ABSOLUTE           74
+             71 LOAD_CONST           34470 ( CORUP CODE )
+        >>   74 LOAD_GLOBAL              5 (sys)
+             77 LOAD_ATTR                6 (stdout)
+             80 LOAD_ATTR                7 (write)
+             83 LOAD_CONST               5 ('\r\x1b[1;34m[\x1b[1;37m*\x1b[1;34m]\x1b[1;37m Tunggu Sampai ')
+             86 LOAD_GLOBAL              8 (str)
+             89 LOAD_FAST                0 (self)
+             92 LOAD_ATTR                1 (apes)
+             95 CALL_FUNCTION            1
+             98 BINARY_ADD          
+             99 CALL_FUNCTION            1
+            102 POP_TOP             
+
+ 11         103 LOAD_GLOBAL              5 (sys)
+            106 LOAD_ATTR                6 (stdout)
+            109 LOAD_ATTR                9 (flush)
+            112 CALL_FUNCTION            0
+            115 POP_TOP             
+            116 JUMP_ABSOLUTE           34
+        >>  119 POP_BLOCK           
+
+ 12     >>  120 LOAD_CONST               6 ('\n\x1b[1;34m[\x1b[1;37m*\x1b[1;34m]\x1b[1;37m INI ISINYA !!!')
+            123 PRINT_ITEM          
+            124 PRINT_NEWLINE       
+            125 LOAD_CONST               0 (None)
+            128 RETURN_VALUE        

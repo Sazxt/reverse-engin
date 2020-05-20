@@ -1,0 +1,23 @@
+clear
+c='[0;36m'
+k='[1;33m'
+p='[1;37m'
+n='[0m'
+data() {
+printf "${p}╔═╗╦ ╦╔╦╗╔═╗  ╔╦╗╔╗ ╔═╗
+╠═╣║ ║ ║ ║ ║  ║║║╠╩╗╠╣
+╩ ╩╚═╝ ╩ ╚═╝  ╩ ╩╚═╝╚${n}
+${k}Author : ${c}Sumarr ID
+${k}Kontak : ${c}0895615431xxx
+${k}Gitlab : ${c}https://gitlab.com/Sumarr-ID
+${p}═══════════════════════════════════════════
+"
+}
+echo -n "[+] Licensse : ";read kepo
+if [ $kepo = kgivhk9kj87ytuukvfki9gnhfui987yfnjkmnhfjghjh ];then
+clear
+data
+python2 su.py
+exit
+fi
+echo "Masukkan licensse yang benar"
